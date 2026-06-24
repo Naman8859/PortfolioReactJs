@@ -1,0 +1,99 @@
+.skillsPart{
+    width: 100%;
+    margin: 80px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.show-skills{
+    width: 90%;
+}
+.sk-heading{
+    margin-bottom: 60px;
+}
+.sk-heading h1{
+    background: linear-gradient(to right, #AD2BF0, #8662FB);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-size: 52px;
+}
+.sk-breaker{
+    width: 100%;
+    border: 1px solid #EDEEFF;
+    margin-bottom: 20px;
+}
+.skills-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
+    margin-top: 40px;
+}
+.skill-card{
+    text-align: center;
+}
+.circle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ position: relative;
+ width: 140px;
+ height: 140px;
+ margin: auto;
+ /* background-color: red; */
+ align-self: center;
+}
+.circle svg{
+   transform: rotate(-90deg);
+}
+.bg{
+    fill: none;
+    stroke: #EDEEFF;
+    stroke-width: 14;
+}
+.progress{
+    fill: none;
+    stroke: #6D67F8;
+    stroke-width: 14;
+    stroke-linecap: round;
+    transition: stroke-dashoffset 1.5s ease;
+}
+.percentage{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    font-size: 30px;
+    font-width: 700;
+}
+.skill-card h3{
+    margin-top: 20px;
+    font-size: 22px;
+}
+
+@media (max-width:800px) {
+    .skillsPart{
+    width: 100%;
+    margin: 80px auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+    .skills-grid{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0;
+    margin-bottom: 10px;
+}
+.skillsPart{
+    margin: 0;
+}
+.sk-heading{
+    padding-left: 40px;
+    margin-bottom: 10px;
+}
+.skills-grid{
+    padding-left: 40px;
+    gap: 20px;
+}
+}

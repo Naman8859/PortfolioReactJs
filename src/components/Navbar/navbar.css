@@ -77,3 +77,25 @@ button a{
     font-size: 24px;
     color: var(--white);
 }
+.hamburger{
+    display: none;
+}
+@media (max-width:800px) {
+    nav{
+  
+    justify-content: space-between;
+    padding: 0 20px;
+}
+    .hamburger{
+        display: flex;
+    }
+    .right{
+        display: none;
+    }
+    .center{
+        display: none;
+    }
+    .name{
+        font-size: 3vw;
+    }
+}

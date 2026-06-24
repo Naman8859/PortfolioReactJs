@@ -2,6 +2,7 @@ import React from "react";
 import "./navbar.css";
 import {Link} from "react-router-dom";
 import myImg from "../../assets/naman.jpeg";
+import hamburger from "../../assets/hamburger.png"
 
 const Navbar = ()=>{
 return(
@@ -24,6 +25,9 @@ return(
         </div>
         <div className="right">
             <button><Link to={'./contact'}>Contact Me</Link></button>
+        </div>
+        <div className="hamburger">
+            <img src={hamburger} alt="" />
         </div>
     </nav>
 )

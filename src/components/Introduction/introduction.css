@@ -1,0 +1,138 @@
+:root {
+    --navy-blue: #1B1C37;
+    --white: #fff;
+    --light-purple: #7579FF;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.intro {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    max-height: 700px;
+    padding: 80px 80px;
+}
+
+.intro-right {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro-left {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+}
+
+.intro-left .intro-name {
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeUp 1s ease forwards;
+    color: black;
+    font-size: 34px;
+    margin-bottom: 30px;
+}
+.intro-name h1{
+    font-size: 64px;
+}
+.intro-about p{
+    font-size: 15px;
+}
+
+@keyframes fadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.intro-right img {
+    height: 700px;
+    width: 700px;
+}
+
+.intro-about {
+    margin-bottom: 30px;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeUp 1s ease forwards;
+    animation-delay: 0.5s;
+}
+
+@keyframes fadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.intro-left-button button {
+    background: linear-gradient(to right, #AD2BF0, #8662FB);
+    border: none;
+    border-radius: 20px;
+    width: 250px;
+    height: 50px;
+}
+
+.intro-btn-img img {
+    width: 20px;
+    height: 20px;
+}
+
+.intro-left-button button a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+@media (max-width:800px) {
+    .intro-right {
+        display: none;
+    }
+
+    .intro {
+        display: block;
+        width: 100%;
+        max-height: 700px;
+        padding: 0 0;
+    }
+    .intro-left {
+    width: 100%;
+    padding: 20px 20px;
+}
+.intro-name h1 {
+    font-size: 9vw;
+}
+.intro-about p{
+    font-size: 3vw;
+}
+}
+
+
+
