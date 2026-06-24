@@ -113,10 +113,11 @@
 @media (max-width:800px) {
     .abt-card {
         width: 90%;
-        margin: 20px auto;
-        min-height: 180px;
-        height: auto;
-        padding: 0 10px;
+        
+        padding: 0 10px; 
+        height: 120px;
+        min-height: unset;
+        overflow: visible;
 
     }
 
@@ -125,8 +126,8 @@
     }
 
     .abt-img{
-    width: clamp(140px, 25vw, 200px);
-    aspect-ratio: 4 / 5;
+    width: clamp(140px, 25vw, 180px);
+    aspect-ratio: 4 / 4;
     height: auto;
 
     transform: translateY(-80px);
@@ -141,8 +142,8 @@
     }
 
     .badge-img img {
-        height: 9vh;
-        width: 12vw;
+        height: 10vw;
+        width: 10vw;
     }
 
     .percent h1 {
@@ -158,8 +159,8 @@
     }
 
     .calender-img img {
-        height: 9vh;
-        width: 12vw;
+        height: 10vw;
+        width: 10vw;
     }
     .text-area .indian h1{
         font-size: 8vw;
