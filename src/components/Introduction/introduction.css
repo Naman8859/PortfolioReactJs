@@ -133,6 +133,28 @@ body {
     font-size: 3vw;
 }
 }
+@media (max-width:1120px){
+    .intro-right {
+        display: none;
+    }
+
+    .intro {
+        display: block;
+        width: 100%;
+        max-height: 700px;
+        padding: 0 0;
+    }
+    .intro-left {
+    width: 80%;
+    padding: 20px 20px;
+}
+.intro-name h1 {
+    font-size: 9vw;
+}
+.intro-about p{
+    font-size: 3vw;
+}
+}
 
 
 
