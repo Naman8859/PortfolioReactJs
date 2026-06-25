@@ -1,0 +1,109 @@
+.portfolio-container {
+    padding: 0 80px;
+}
+
+.port-heading h1 {
+    font-size: 52px;
+    background: linear-gradient(to right, #AD2BF0, #8662FB);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.port-breaker {
+    width: 100%;
+    border: 1px solid #EDEEFF;
+    margin-bottom: 20px;
+}
+.card-scroll{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    padding: 50px 0;
+}
+.card-scroll::-webkit-scrollbar{
+    display: none;
+}
+.card {
+    flex-shrink: 0;
+    flex: 0 0 500px;
+    max-width: 500px;
+    width: 85vw;
+    /* width: 500px; */
+    height: 250px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+    gap: 30px;
+}
+
+.project-image {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 85%;
+    height: 320px;
+    border-radius: 30px;
+    /* transform: translateY(-50px); */
+    margin-top: -80px;
+}
+
+.name-desc {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+    
+}
+
+.project-name h3{
+    font-size: 24px;
+     background: linear-gradient(to right, #AD2BF0, #8662FB);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+
+}
+.project-desc{
+    margin-bottom: 20px;
+}
+.project-desc h4{
+    font-weight: 100;
+}
+.name-desc-breaker {
+    width: 100%;
+    border: 1px solid #EDEEFF;
+    margin-bottom: 10px;
+}
+@media (max-width:800px) {
+    .portfolio-container{
+
+        padding: 0 10px;
+    }
+    .port-heading h1{
+        font-size: 8vw;
+    }
+    .card-scroll{
+        gap: 16px;
+        padding: 40px 0;
+    }
+    .card{
+        width: 50vw;
+        max-width: 300px;
+        height: 180px;
+        gap: 20px;
+        margin-top: 60px;
+    }
+    .project-name h3{
+        font-size: 5vw;
+    }
+    .project-desc h4{
+        font-size: 3vw;
+    }
+}
