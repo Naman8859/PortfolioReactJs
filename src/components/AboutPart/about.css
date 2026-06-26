@@ -1,15 +1,8 @@
-/* *{
-    outline: 1px solid red;
-} */
-/* body{
-    overflow-x: hidden;
-} */
 .about-container {
     background-image: url("../../assets/grid1.jpg");
-       /* background-color: #1B1C37; */
+
     display: flex;
-    /* background: red; */
-        background-size: cover;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     align-items: center;
@@ -17,12 +10,12 @@
     gap: 0px;
     padding: 0px 0 0;
     width: 100%;
-
-    /* position: relative; */
 }
-.about{
+
+.about {
     margin-top: 20px;
 }
+
 .about h1 {
     font-size: 44px;
     color: white;
@@ -104,9 +97,6 @@
 }
 
 .svg {
-    /* position: absolute;
-    bottom: -210px;
-    left: 0; */
     width: 100%;
     line-height: 0;
     margin-top: 50px;
@@ -121,8 +111,8 @@
 @media (max-width:800px) {
     .abt-card {
         width: 90%;
-        
-        padding: 0 10px; 
+
+        padding: 0 10px;
         height: 120px;
         min-height: unset;
         overflow: visible;
@@ -133,13 +123,13 @@
         bottom: -55px;
     }
 
-    .abt-img{
-    width: clamp(140px, 25vw, 180px);
-    aspect-ratio: 4 / 4;
-    height: auto;
+    .abt-img {
+        width: clamp(140px, 25vw, 180px);
+        aspect-ratio: 4 / 4;
+        height: auto;
 
-    transform: translateY(-80px);
-}
+        transform: translateY(-80px);
+    }
 
     .responsibility {
         gap: 0;
@@ -170,7 +160,8 @@
         height: 10vw;
         width: 10vw;
     }
-    .text-area .indian h1{
+
+    .text-area .indian h1 {
         font-size: 8vw;
     }
 }
